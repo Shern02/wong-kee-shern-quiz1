@@ -11,26 +11,33 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <Button
-            android:id="@+id/button_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About MMU"
-            app:layout_constraintBottom_toTopOf="@id/textview_first"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
-        <TextView
-            android:id="@+id/textview_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/lorem_ipsum"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_first"
-            tools:text="Multimedia University is founded in 1996 and located at Cyberjaya, Selangor, Malaysia. It was founded initially as the Institute of Tele Communication and Information Technology by Telekom. Now it is known for its strong academic and research reputation to study in Malaysia. In just 25 years of foundation, MMU has been listed in the top 400 young universities in the world by Times Higher Education. Currently, it has about 1000 international students from more than 70 countries worldwide. It has 2 campuses in Cyberjaya, and Melaka." />
+            <Button
+                android:id="@+id/button_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About MMU" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:src="@drawable/Campus" />
+
+            <TextView
+                android:id="@+id/textview_first"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/lorem_ipsum"
+                tools:text="Multimedia University is founded in 1996 and located at Cyberjaya, Selangor, Malaysia. It was founded initially as the Institute of Tele Communication and Information Technology by Telekom. Now it is known for its strong academic and research reputation to study in Malaysia. In just 25 years of foundation, MMU has been listed in the top 400 young universities in the world by Times Higher Education. Currently, it has about 1000 international students from more than 70 countries worldwide. It has 2 campuses in Cyberjaya, and Melaka." />
+
+        </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
